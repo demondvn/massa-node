@@ -40,7 +40,9 @@ COPY config /massa-guard/config
 # Conf rights
 RUN chmod +x /massa-guard/massa-guard.sh \
 && chmod +x /massa-guard/sources/* \
-&& mkdir /massa_mount
+&& mkdir /massa_mount \
+&& chmod +x /massa \
+&& chmod +x /massa-$VERSION
 
 # Expose ports
 EXPOSE 31244
