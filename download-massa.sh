@@ -18,6 +18,7 @@ wget "$MASSA_PACKAGE_LOCATION/$package"
 # Extract the package's content
 tar -zxpf "$package"
 mv /massa /massa-"$VERSION"
+chmod 777 /massa-"$VERSION"
 ln -s /massa-"$VERSION" /massa
 
 # Delete the package
