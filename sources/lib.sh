@@ -470,7 +470,7 @@ RefreshPublicIP() {
 #############################################################
 GetPublicIP() {
 	# Get mon IP
-	myIP=$(curl -s ifconfig.co)
+	myIP=$(curl -s https://ipinfo.io/ip)
 
 	# Return my public IP
 	echo $myIP
