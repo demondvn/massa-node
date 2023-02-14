@@ -9,7 +9,7 @@ docker build . -t massa --build-arg VERSION=TEST.19.3
 docker run -d --restart=always --cap-drop=ALL --cap-add=NET_RAW --cap-add=NET_ADMIN --cap-add=SYS_MODULE --net=host --name ipv6nat -v /mnt/blockstore/massa:/massa_mount -p 31244-31245:31244-31245 -e "DYNIP=1" -e https_proxy="socks5://ProxyUser:Passs@15.235.186.526:1080" -e "WALLETPWD=P@ssw0rd" -e "DISCORD=NzkyNjgwNjM5NzA2MDM4Mjgxxxxxxxxx" --name massa-node massa
 
 # Massa node + Massa-guard #
-**Last build for Massa testnet Episode 19 release 19.0.0**
+**Last build for Massa testnet Episode 19 release 19.3.0**
 
 ![alt text](https://d33wubrfki0l68.cloudfront.net/7df7d7a57a8dda3cc07aab16121b3e3990cf0893/16ccd/portfolio/massa.png)
 
@@ -40,6 +40,8 @@ This image include a script named "**/massa-guard/massa-guard.sh**" to:
   - Massa-guard auto get faucet to buy your first roll.
 
 ### [RELEASE NOTES] ###
+- 20230210 - Testnet 19 - v19.3.0 - Testnet 19 - v19.3 Ready!
+- 20230209 - Testnet 19 - v19.2.0 - Testnet 19 - v19.2 Ready!
 - 20230201 - Testnet 19 - v19.0.0 - Testnet 19 - v19.0 Ready! Somes modications after massa testnet 19.0 cmd updates.
 - 20230103 - Testnet 18 - v18.0.0 - Testnet 18 - v18.0 Ready!
 - 20221207 - Testnet 17 - v17.2.0 - Testnet 17 - v17.2 Ready!
