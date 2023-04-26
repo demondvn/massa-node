@@ -4,7 +4,7 @@ rm -rf massa-node
 
 git clone https://github.com/demondvn/massa-node
 
-docker build . -t massa --build-arg VERSION=TEST.19.3
+docker build . -t massa --build-arg VERSION=TEST.21.0
 
 docker run -d --restart=always --cap-drop=ALL --cap-add=NET_RAW --cap-add=NET_ADMIN --cap-add=SYS_MODULE --net=host --name ipv6nat -v /mnt/blockstore/massa:/massa_mount -p 31244-31245:31244-31245 -e "DYNIP=1" -e https_proxy="socks5://ProxyUser:Passs@15.235.186.526:1080" -e "WALLETPWD=P@ssw0rd" -e "DISCORD=NzkyNjgwNjM5NzA2MDM4Mjgxxxxxxxxx" --name massa-node massa
 
